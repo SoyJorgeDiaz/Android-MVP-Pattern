@@ -16,7 +16,7 @@ public class MainActivityPresenterImpl implements IMainActivityPresenter{
 
     public MainActivityPresenterImpl(IMainActivityView iView) {
         this.iView = iView;
-        iInteractor = new MainActivityInteractorImpl();
+        iInteractor = new MainActivityInteractorImpl(this);
     }
 
     @Override
