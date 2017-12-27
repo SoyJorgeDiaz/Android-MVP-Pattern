@@ -5,4 +5,5 @@ package co.com.diaz.cursoandroidmvp.interfaces;
  */
 
 public interface IMainActivityView {
+    void showResult(String s);
 }

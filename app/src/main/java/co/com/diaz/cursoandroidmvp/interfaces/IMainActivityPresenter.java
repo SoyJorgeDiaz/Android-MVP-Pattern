@@ -5,4 +5,6 @@ package co.com.diaz.cursoandroidmvp.interfaces;
  */
 
 public interface IMainActivityPresenter {
+    void showResult(String s);
+    void addText(String s);
 }
