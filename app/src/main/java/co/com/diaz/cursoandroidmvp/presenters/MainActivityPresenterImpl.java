@@ -21,11 +21,11 @@ public class MainActivityPresenterImpl implements IMainActivityPresenter{
 
     @Override
     public void showResult(String s) {
-
+        if (iView != null) iView.showResult(s);
     }
 
     @Override
     public void addText(String s) {
-
+        iInteractor.addText(s);
     }
 }

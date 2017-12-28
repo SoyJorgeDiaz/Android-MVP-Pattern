@@ -37,10 +37,11 @@ public class MainActivityView extends AppCompatActivity implements IMainActivity
     }
 
     public void sendData(View view) {
+        iPresenter.addText(inputData.getText().toString());
     }
 
     @Override
     public void showResult(String s) {
-
+        tvData.setText(s);
     }
 }

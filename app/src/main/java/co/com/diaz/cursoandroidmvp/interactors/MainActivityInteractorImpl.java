@@ -11,6 +11,7 @@ import co.com.diaz.cursoandroidmvp.presenters.MainActivityPresenterImpl;
 public class MainActivityInteractorImpl implements IMainActivityInteractor{
 
     private IMainActivityPresenter iPresenter;
+    private String data;
 
     public MainActivityInteractorImpl(MainActivityPresenterImpl presenterImpl) {
         this.iPresenter = presenterImpl;
@@ -18,6 +19,7 @@ public class MainActivityInteractorImpl implements IMainActivityInteractor{
 
     @Override
     public void addText(String s) {
-
+        data = "El texto ingresado es:\n" + s;
+        iPresenter.showResult(data);
     }
 }
