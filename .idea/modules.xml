@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MVP-Pattern.iml" filepath="$PROJECT_DIR$/MVP-Pattern.iml" />
-      <module fileurl="file://$PROJECT_DIR$/basicmessagemvp/app.iml" filepath="$PROJECT_DIR$/basicmessagemvp/app.iml" />
+      <module fileurl="file://D:\Workspace\AndroidProjects\MVP-Pattern\basicmessagemvp\app.iml" filepath="D:\Workspace\AndroidProjects\MVP-Pattern\basicmessagemvp\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basicmessagemvp/basicmessagemvp.iml" filepath="$PROJECT_DIR$/basicmessagemvp/basicmessagemvp.iml" />
       <module fileurl="file://$PROJECT_DIR$/loginmvp/loginmvp.iml" filepath="$PROJECT_DIR$/loginmvp/loginmvp.iml" />
     </modules>
   </component>
