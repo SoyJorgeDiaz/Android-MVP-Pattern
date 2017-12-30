@@ -1,5 +1,6 @@
 package co.com.diaz.loginmvp.presenters;
 
+import co.com.diaz.loginmvp.interactors.LoginInteractorImpl;
 import co.com.diaz.loginmvp.interfaces.ILoginInteractor;
 import co.com.diaz.loginmvp.interfaces.ILoginPresenter;
 import co.com.diaz.loginmvp.interfaces.ILoginView;
@@ -15,7 +16,7 @@ public class LoginPresenterImpl implements ILoginPresenter {
 
     public LoginPresenterImpl(ILoginView iLoginView) {
         this.iLoginView = iLoginView;
-        iLoginInteractor = new LoginPresenterImpl();
+        iLoginInteractor = new LoginInteractorImpl();
     }
 
     @Override
