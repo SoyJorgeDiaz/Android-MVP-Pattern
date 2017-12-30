@@ -22,16 +22,25 @@ public class LoginPresenterImpl implements ILoginPresenter, IOnLoginFinishedList
 
     @Override
     public void attempLogin(String username, String password) {
-
+        if (iLoginView != null){
+            iLoginView.showProgress();
+            iLoginInteractor.validateCredentials(this, username, password);
+        }
     }
 
     @Override
     public void onError() {
-        
+        if (iLoginView != null){
+            iLoginView.hideProgress();
+            iLoginView.accessDenied();
+        }
     }
 
     @Override
     public void onSuccess() {
-
+        if (iLoginView != null){
+            iLoginView.hideProgress();
+            iLoginView.accessSuccessful();
+        }
     }
 }
